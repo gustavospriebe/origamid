@@ -11,6 +11,7 @@ function showProduct(data) {
     <div>
       <h2>${data.nome}</h2>
       <p>R$ ${data.preco}</p>
+      <p>${data.garantia} meses de garantia</p>
       <div>
         <h3>Fabricante: ${data.empresaFabricante.nome}</h3>
       </div>
