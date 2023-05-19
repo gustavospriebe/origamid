@@ -16,20 +16,20 @@ async function handleData() {
 }
 handleData();
 function checkInterface(obj, ...keys) {
-    if (obj &&
+    if (
+        obj &&
         typeof obj === "object" &&
-        keys.filter((key) => key in obj).length === keys.length) {
+        keys.filter((key) => key in obj).length === keys.length
+    ) {
         return true;
-    }
-    else {
+    } else {
         return false;
     }
 }
 function checkInterfaceSimples(obj, key) {
     if (obj && typeof obj === "object" && key in obj) {
         return true;
-    }
-    else {
+    } else {
         return false;
     }
 }
